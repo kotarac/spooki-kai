@@ -1,0 +1,220 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #2B2B2B;
+}
+
+.comment {
+  color: #909090;
+}
+
+.string {
+  color: #E2D88E;
+}
+
+.constant.numeric {
+  color: #FB4D53;
+}
+
+.constant.language {
+  color: #01FF00;
+}
+
+.constant.character, .constant.other {
+  color: #529BFF;
+}
+
+.variable {
+  color: #FFFFFF;
+}
+
+.keyword {
+  color: #D68EE4;
+}
+
+.storage {
+  color: #F92672;
+}
+
+.storage.type {
+  font-style: italic;
+  color: #49CCED;
+}
+
+.entity.name.class {
+  text-decoration: underline;
+  color: #D81DC3;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: #D81DC3;
+}
+
+.entity.name.function {
+  color: #3BDEA2;
+}
+
+.variable.parameter {
+  font-style: italic;
+  color: #c0d9db;
+}
+
+.entity.name.tag {
+  color: #2AD2F7;
+}
+
+.entity.other.attribute-name {
+  color: #E2D88E;
+}
+
+.support.function {
+  color: #66D9EF;
+}
+
+.support.constant {
+  color: #66D9EF;
+}
+
+.support.type, .support.class {
+  color: #66D9EF;
+}
+
+.support.other.variable {
+}
+
+.invalid {
+  color: #F8F8F0;
+  background-color: #F92672;
+}
+
+.invalid.deprecated {
+  color: #F8F8F0;
+  background-color: #AE81FF;
+}
+
+.string.quoted.double.json, .meta.structure.dictionary.json .string.quoted.double.json, .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json, .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json, .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json, .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json, .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json, .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json, .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .meta.structure.dictionary.json .string.quoted.double.json {
+  color: #2AD2F7;
+}
+
+.meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json, .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .meta.structure.dictionary.value.json .string.quoted.double.json {
+  color: #E2D88E;
+}
+
+.meta.diff, .meta.diff.header {
+  color: #75715E;
+}
+
+.markup.deleted, .markup.deleted.git_gutter {
+  color: #F92672;
+}
+
+.markup.inserted, .markup.inserted.git_gutter {
+  color: #E2D88E;
+}
+
+.markup.changed, .markup.changed.git_gutter {
+  color: #E6DB74;
+}
+
+.constant.numeric.line-number.find-in-files:not(.match) {
+  color: rgba(174, 129, 255, 0.63);
+}
+
+.entity.name.filename.find-in-files {
+  color: #E6DB74;
+}
+
+.markup.heading.markdown {
+  color: #D68EE4;
+}
+
+.markup.list.unnumbered.markdown, .markup.list.unnumbered.markdown {
+  color: #2AD2F7;
+}
+
+.markup.bold.markdown, .markup.italic.markdown {
+  color: #01FF00;
+}
+
+.markup.italic.markdown {
+  font-style: italic;
+}
+
+.markup.bold.markdown {
+  font-weight: bold;
+}
+
+.markup.raw.inline.markdown, .markup.raw.block.markdown {
+  color: #3BDEA2;
+}
+
+.markup.underline.link.markdown, .markup.underline.link.image.markdown, .meta.image.inline.markdown {
+  font-style: italic;
+  color: #E2D88E;
+}
+
+.markup.quote.markdown {
+  color: #E2D88E;
+}
+
+.sublimelinter.mark.warning {
+  color: #DDB700;
+}
+
+.sublimelinter.mark.error {
+  color: #D02000;
+}
+
+.sublimelinter.gutter-mark {
+  color: #FFFFFF;
+}

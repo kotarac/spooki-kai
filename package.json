@@ -1,0 +1,15 @@
+{
+  "name": "spooki-kai",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Dark theme largely based off Monokai and Stereokai.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/kotarac/spooki-kai",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
